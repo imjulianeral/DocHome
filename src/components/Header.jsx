@@ -22,9 +22,9 @@ import useProfile from '../hooks/useProfile'
 const Header = ({ siteTitle }) => {
   const [anchorEl, setAnchorEl] = useState(null)
   const auth = useAuth()
+  const profile = useProfile()
   const classes = headerStyles()
   const open = Boolean(anchorEl)
-  const profile = useProfile()
 
   const handleMenu = event => {
     setAnchorEl(event.currentTarget)
