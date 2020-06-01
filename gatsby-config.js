@@ -4,7 +4,7 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `GatsbyFire Starter`,
+    title: `DocHome`,
     description: `Kick off your next, great Gatsby project with ReactFire. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@`,
   },
@@ -19,11 +19,12 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-material-ui`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `DocHome`,
+        short_name: `DocHome`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

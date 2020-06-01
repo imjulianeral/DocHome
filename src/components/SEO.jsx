@@ -73,6 +73,10 @@ function SEO({ description, lang, meta, title }) {
         rel="stylesheet"
         href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css"
       />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      />
     </Helmet>
   )
 }

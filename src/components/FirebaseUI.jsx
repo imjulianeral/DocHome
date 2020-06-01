@@ -16,7 +16,7 @@ const FirebaseUI = memo(() => {
           auth.GoogleAuthProvider.PROVIDER_ID,
           auth.EmailAuthProvider.PROVIDER_ID,
         ],
-        signInSuccessUrl: '/app/page-2',
+        signInSuccessUrl: '/app/perfil',
       }}
       auth={auth()}
       firebase={firebase_}
