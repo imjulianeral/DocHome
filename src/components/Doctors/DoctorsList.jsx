@@ -48,7 +48,7 @@ export default function DoctorsList() {
                     alignItems="center"
                     key={doctor.id}
                   >
-                    <Grid item xs={12}>
+                    <Grid item xs={profile.type === 'Admin' ? 10 : 12}>
                       <ListItem
                         button
                         key={doctor.id}
@@ -70,12 +70,12 @@ export default function DoctorsList() {
                           secondary={doctor.features.length}
                         />
                       </ListItem>
-                      <Grid item xs={2}>
-                        {profile.type === 'Admin' && (
-                          <Status STATUS={doctor.status} ID={doctor.id} />
-                        )}
-                      </Grid>
                     </Grid>
+                    {profile.type === 'Admin' && (
+                      <Grid item xs={2}>
+                        <Status STATUS={doctor.status} ID={doctor.id} />
+                      </Grid>
+                    )}
                   </Grid>
                 ))}
               </List>

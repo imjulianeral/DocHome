@@ -6,7 +6,7 @@ import { Favorite, LocalHospital, Event, PersonPin } from '@material-ui/icons'
 import { navBottomStyles } from '../Material/Material.config'
 
 export default function BottomNav({ user }) {
-  const [value, setValue] = useState(3)
+  const [value, setValue] = useState()
   const classes = navBottomStyles()
 
   if (user === null) return null

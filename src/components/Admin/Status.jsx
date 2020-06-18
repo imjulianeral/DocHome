@@ -5,9 +5,9 @@ import { useFirestore } from 'reactfire'
 import { Switch } from '@material-ui/core'
 
 export default function Status({ STATUS, ID }) {
-  const db = useFirestore()
+  const firestore = useFirestore()
   const handleChange = async (status, id) => {
-    db.doc(`users/${id}`)
+    const db = await firestore.doc(`users/${id}`)
     if (status === 'PENDIENTE' || status === 'ELIMINADO') {
       db.update({
         status: 'ACTIVADO',
